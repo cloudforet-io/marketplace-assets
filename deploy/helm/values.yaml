@@ -1,0 +1,73 @@
+###############################
+# DEFAULT 
+###############################
+enabled: true
+developer: false
+name: marketplace-assets
+replicas: 1
+image:
+    name: spaceone/marketplace-assets
+    version: latest
+imagePullPolicy: IfNotPresent
+
+# For production.json (nodejs)
+# marketplace-assets_api: https://marketplace-assets-api.marketplace-assets.spaceone.dev
+# Domain name of marketplace-assets-api (usually ALB of marketplace-assets-api)
+
+#domainName:
+#    ref: config
+#    name: root
+
+# local sidecar
+##########################
+#sidecar:
+
+
+##########################
+# Local volumes
+##########################
+volumes:
+    - name: timezone
+      hostPath:
+          path: /usr/share/zoneinfo/Asia/Seoul
+    - name: log-volume
+      emptyDir: {}
+
+#######################
+# global variable
+#######################
+global:
+    shared: {}
+    frontend:
+      sidecar: []
+
+      volumes: []
+    
+# Service
+service:
+    type: NodePort
+    annotations:
+        nil: nil
+    ports:
+        - name: http
+          port: 80
+          targetPort: 80
+          protocol: TCP
+        - name: https
+          port: 443
+          targetPort: 80
+          protocol: TCP
+
+# Ingress
+ingress:
+  enabled: false
+  host: 'marketplace-assets'   # host for ingress (ex. marketplace-assets.spaceone.dev)
+  annotations:
+      kubernetes.io/ingress.class: alb
+      alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+      alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
+      alb.ingress.kubernetes.io/inbound-cidrs: 0.0.0.0/0 # replace or leave out
+      alb.ingress.kubernetes.io/scheme: "internet-facing" # internet-facing
+      alb.ingress.kubernetes.io/target-type: instance # Your marketplace-assets and marketplace-assets-api should be NodePort for this configuration.
+      alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:... # This should be replaced with your cert arn.
+
