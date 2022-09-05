@@ -98,7 +98,7 @@ jobs:
 
   docker:
     needs: [condition_check, update_local_version_file]
-    if: github.repository_owner == 'spaceone-dev'
+    if: github.repository_owner == 'cloudforet-io'
     runs-on: ubuntu-latest
     env:
       VERSION: ${{ needs.condition_check.outputs.TAG }}
@@ -165,7 +165,7 @@ jobs:
           tags: ${{ secrets.ECR_REPO }}/${{ env.SERVICE }}:${{ env.VERSION }}
 
   notify_to_slack:
-    if: github.repository_owner == 'spaceone-dev'
+    if: github.repository_owner == 'cloudforet-io'
     needs: [condition_check, update_local_version_file, docker]
     runs-on: ubuntu-latest
     steps:
