@@ -10,6 +10,14 @@ image:
     version: latest
 imagePullPolicy: IfNotPresent
 
+resources: {}
+#     requests:
+#         memory: "128Mi"
+#         cpu: "25m"
+#     limits:
+#         memory: "256Mi"
+#         cpu: "50m"
+
 # For production.json (nodejs)
 # marketplace-assets_api: https://marketplace-assets-api.marketplace-assets.spaceone.dev
 # Domain name of marketplace-assets-api (usually ALB of marketplace-assets-api)
@@ -18,6 +26,7 @@ imagePullPolicy: IfNotPresent
 #    ref: config
 #    name: root
 
+##########################
 # local sidecar
 ##########################
 #sidecar:
