@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 45.686926 44.022655"
+   version="1.1"
+   sodipodi:docname="File Storage Replica.svg"
+   width="45.686924"
+   height="44.022655"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="19.275"
+     inkscape:cx="22.853437"
+     inkscape:cy="22.023346"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1072"
+     inkscape:window-y="425"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <path
+     id="path4-3"
+     style="fill:#fcfbfa"
+     d="M 5.015625,0.0453455 C 3.6864809,0.1330307 2.4592797,1.032265 1.9648437,2.2680018 1.4427554,3.5630725 1.7574757,5.0229179 1.6699219,6.3902674 V 27.019955 C 1.1679442,27.141285 0.1726288,26.769277 0,27.219955 v 16.8 c 14.085205,-0.01068 28.173862,0.02139 42.256908,-0.01604 1.352562,-0.07977 2.615954,-0.971203 3.116139,-2.23396 0.530888,-1.328508 0.206752,-2.819904 0.296875,-4.219922 C 45.656122,26.124099 45.697372,14.69659 45.649612,3.2716271 45.466329,1.312433 43.542036,-0.1921007 41.6,0.0199549 29.424822,0.0306569 17.246189,-0.0014431 5.0731697,0.0359949 Z"
+     sodipodi:nodetypes="ccccccccccccc" />
+  <path
+     d="M 3.67,27.949955 H 5.15 V 7.5799549 h 37 V 40.349955 a 0.19,0.19 0 0 1 -0.19,0.19 H 13.48 v 1.48 H 42 a 1.67,1.67 0 0 0 1.67,-1.67 V 6.0899549 h -40 z"
+     fill="#2c5967"
+     id="path1" />
+  <path
+     d="M 42,2.0199549 H 5.33 a 1.66,1.66 0 0 0 -1.66,1.67 v 1.33 h 40 v -1.33 a 1.67,1.67 0 0 0 -1.67,-1.67 z"
+     fill="#2c5967"
+     id="path2" />
+  <path
+     d="m 38.67,16.839955 a 1.51,1.51 0 0 0 -1.52,-1.49 H 20.26 l -1.58,-2 a 1.5,1.5 0 0 0 -1.19,-0.57 H 10 a 1.48,1.48 0 0 0 -1.5,1.46 v 13.71 H 10 v -8.52 h 7.86 a 1.57,1.57 0 0 0 1.14,-0.58 l 1.59,-2 h 16.6 v 17.17 H 13.48 v 1.48 h 25.19 z m -20.81,1.09 c 0,0 0,0 0,0 H 10 v -3.69 h 7.55 l 1.63,2.07 z"
+     fill="#2c5967"
+     id="path3" />
+  <rect
+     x="11.26"
+     y="15.349955"
+     width="5.7399998"
+     height="1.48"
+     fill="#2c5967"
+     id="rect3" />
+  <path
+     d="M 12.37,29.019955 H 2 v 13 h 10.37 z m -7,11.48 H 3.48 v -10 h 7.41 v 10 z"
+     fill="#2c5967"
+     id="path4" />
+  <path
+     d="m 8.84,35.609955 a 1.62,1.62 0 0 0 -0.2,-2.06 2.07,2.07 0 0 0 -1.37,-0.41 H 5.35 v 5 h 1.07 v -2 l 0.67,0.17 1.06,1.81 h 1.18 l -1.25,-2 a 1.41,1.41 0 0 0 0.76,-0.51 z m -1,-0.31 a 1.63,1.63 0 0 1 -0.86,0.16 H 6.42 v -1.44 h 0.52 a 1.63,1.63 0 0 1 0.86,0.16 0.65,0.65 0 0 1 0.25,0.57 0.63,0.63 0 0 1 -0.25,0.55 z"
+     fill="#2c5967"
+     id="path5" />
+</svg>
